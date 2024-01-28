@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <main id="post">
+      <div class="header bg-light">
+        <img class="icono-ig" src="https://i.pinimg.com/originals/b4/45/9f/b4459f3c84d7e01cd51647240810f933.png" alt="iconoIG">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <span><h4>Instagram</h4></span>
+            </div>
+          </div> 
+          
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Crear nuevo post</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Crear nuevo post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                 <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Subtítulo</label>
+                  <textarea class="form-control" placeholder="Agrega el título de tu publicación aquí" id="message-text"></textarea>
+                  <p></p>
+                  <button type="button" class="btn btn-outline-secondary"><span class="material-symbols-outlined">
+                    photo_camera
+                    </span></button>
+                  <button type="button" class="btn btn-outline-secondary"><span class="material-symbols-outlined">
+                    location_on
+                    </span></button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-success">Público</button>
+            </div>
+           </div>
+           </div>
+          </div>
+        </div>
+        <div class="col"> 
+          <div class="btn-group">
+              <button type="button" class="btn btn-secondary dropdown-toggle" style="font-size: 0px;"  data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">
+                  settings
+                  </span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                <li><a class="dropdown-item" href="#">Privacidad y datos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" style="color: red;" href="#">Cerrar sesión</a></li>
+              </ul>
+            </div>
+        </div> 
+      </div>
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" style="color: rgb(69, 65, 65);"  id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><span class="material-symbols-outlined">
+            background_grid_small
+            </span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><span class="material-symbols-outlined">
+            transition_dissolve
+            </span></button>
+        </li>
+      </ul>
+      
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="tab-content"  id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <p></p>
+               <div class="text-center">
+                <div class="card" style="width: 18rem;">
+                  <h5>Google</h5>
+                  <img src="data:image/png;base64,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" class="rounded" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Google, una potencia en la tecnología de búsqueda, ofrece servicios que conectan a usuarios con información global instantáneamente. Desde búsquedas web hasta herramientas empresariales, Google impulsa la era digital con innovación y accesibilidad</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+      
+     
+
+       
+   
+</main>
+</body>
+</html>
+
+

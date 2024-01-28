@@ -1,0 +1,36 @@
+html {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+ }
+ 
+ #post {
+    background-color: white;
+    height: 1000px;
+    width: 700px;
+ 
+ }
+
+ .icono-ig{
+   height: 30px;
+   width: 30px;
+   
+ }
+
+ .header {
+   display: flex;
+   margin: 20px;
+   padding: 20px;
+  
+ }
+
+ .text-center {
+  display: flex;
+  justify-content: center;
+ }
+
+ .center {
+  display: flex;
+  justify-content: center;
+ }
