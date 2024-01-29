@@ -7,7 +7,7 @@ html {
  
  #post {
     background-color: white;
-    height: 1000px;
+    height: 100%;
     width: 700px;
  
  }
@@ -33,4 +33,9 @@ html {
  .center {
   display: flex;
   justify-content: center;
+ }
+
+ .tituloFeed{
+  display: flex;
+  justify-content: space-between;
  }
